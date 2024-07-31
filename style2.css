@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  #hero #hero-text {
+    max-width: 50%;
+  }
+  
+  #hero img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #stats, #services, #service-details, #trusted-by, #work-structure, #our-arsenals, .Engage {
+    padding: 20px;
+    background: #fff;
+  }
+  
+  #stats #stats-text h1, #services-header h1, #work-structure-header h1, #our-arsenals-header-one h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #stats #stats-container, #work-structure-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #stats #stats-container #stats-item, #work-structure-container .work {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .logo-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .additional-pics {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left, .footer-sections {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  
+  /* Media Queries */
+  
+  /* For small mobile devices (up to 480px) */
+  @media screen and (max-width: 480px) {
+    header div {
+      width: 95%;
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    header nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #hero {
+      flex-direction: column;
+      margin: 30px 0;
+    }
+  
+    #hero #hero-text {
+      margin-top: 40px;
+      text-align: center;
+    }
+  
+    #stats, #services, #service-details, #trusted-by, #work-structure, #our-arsenals, .Engage {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    #stats #stats-text h1, #services-header h1, #work-structure-header h1, #our-arsenals-header-one h1 {
+      font-size: 24px;
+    }
+  
+    #stats #stats-container, #work-structure-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #stats #stats-container #stats-item, #work-structure-container .work {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .logo-row {
+      flex-direction: column;
+    }
+  
+    .additional-pics {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-left, .footer-sections {
+      width: 100%;
+    }
+  
+    .footer-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* For tablets (481px to 768px) */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    header div {
+      width: 95%;
+    }
+  
+    #hero {
+      flex-direction: column;
+      margin: 60px 0;
+    }
+  
+    #hero #hero-text {
+      margin-top: 60px;
+    }
+  
+    #stats, #services, #service-details, #trusted-by, #work-structure, #our-arsenals, .Engage {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    #stats #stats-text h1, #services-header h1, #work-structure-header h1, #our-arsenals-header-one h1 {
+      font-size: 30px;
+    }
+  
+    #stats #stats-container, #work-structure-container {
+      flex-direction: column;
+    }
+  
+    .logo-row {
+      flex-wrap: wrap;
+    }
+  
+    .additional-pics {
+      flex-direction: row;
+    }
+  
+    .footer-left, .footer-sections {
+      width: 100%;
+    }
+  
+    .footer-section {
+      width: 50%;
+    }
+  }
+  
+  /* For larger screens (769px to 1200px) */
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    header div {
+      width: 90%;
+    }
+  
+    #hero {
+      margin: 80px 0;
+    }
+  
+    #stats, #services, #service-details, #trusted-by, #work-structure, #our-arsenals, .Engage {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    #stats #stats-text h1, #services-header h1, #work-structure-header h1, #our-arsenals-header-one h1 {
+      font-size: 34px;
+    }
+  
+    #stats #stats-container {
+      flex-direction: row;
+    }
+  
+    .logo-row {
+      flex-wrap: nowrap;
+    }
+  
+    .additional-pics {
+      flex-direction: row;
+    }
+  
+    .footer-left, .footer-sections {
+      width: 50%;
+    }
+  }
+  
+  /* For extra-large screens (1201px and above) */
+  @media screen and (min-width: 1201px) {
+    header div {
+      width: 90%;
+    }
+  
+    #hero {
+      margin: 90px 0;
+    }
+  
+    #stats, #services, #service-details, #trusted-by, #work-structure, #our-arsenals, .Engage {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    #stats #stats-text h1, #services-header h1, #work-structure-header h1, #our-arsenals-header-one h1 {
+      font-size: 38px;
+    }
+  
+    #stats #stats-container {
+      flex-direction: row;
+    }
+  
+    .logo-row {
+      flex-wrap: nowrap;
+    }
+  
+    .additional-pics {
+      flex-direction: row;
+    }
+  
+    .footer-left, .footer-sections {
+      width: 25%;
+    }
+  
+    .footer-section {
+      width: 30%;
+    }
+  }
+  
